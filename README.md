@@ -16,7 +16,12 @@ chmod +x ./setup.sh
 ./setup.sh
 ```
 
-3) Run the main.sh script to run the collection of security tools
+3) Login to the root user, as this script requires sudo privileges.
+```bash
+sudo su
+```
+
+4) Run the main.sh script to run the collection of security tools
 ```bash
 ./main.sh
 ```
