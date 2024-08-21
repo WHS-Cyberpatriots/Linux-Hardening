@@ -32,6 +32,10 @@ function main() {
         bash ./scripts/rkhunter.sh
     fi
 
+    if [[ $(prompt "Would you like to run the auditd script? [y/N]: ") == "1" ]]; then
+        bash ./scripts/auditd.sh
+    fi
+
     if [[ $(prompt "Would you like to run the baseline command? If yes, check the files listed as they have been changed and might contain suspicious entries.. [y/N]: ") == "1" ]]; then
         dpkg -V
     fi
